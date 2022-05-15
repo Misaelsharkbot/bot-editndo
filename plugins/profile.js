@@ -13,22 +13,22 @@ let handler = async (m, { conn }) => {
     let str = `
 
 ✧───────[ *PROFILE* ]───────✧
-📇 • *Name:* ${username} ${registered ? '(' + name + ') ': ''}
-📧 • *Tag:* @${who.replace(/@.+/, '')}
-📞 • *Number:* ${PhoneNumber('+' + who.replace('@s.whatsapp.net', '')).getNumber('international')}
+📇 • *Nombre:* ${username} ${registered ? '(' + name + ') ': ''}
+📧 • *Etiqueta:* @${who.replace(/@.+/, '')}
+📞 • *Numero:* ${PhoneNumber('+' + who.replace('@s.whatsapp.net', '')).getNumber('international')}
 💻 • *Link:* https://wa.me/${who.split`@`[0]}
-${registered ? '🎨 • *Age:* ' + age : ''}
+${registered ? '🎨 • *Edad:* ' + age : ''}
 
 🌟 • *Premium:* ${premium ? "✅" :"❌"}
-📑 • *Registered:* ${registered ? '✅': '❌'}
-⛔ • *Banned:* ❌
+📑 • *Registrado:* ${registered ? '✅': '❌'}
+⛔ • *Baneado:* ❌
 
 `.trim()
     let mentionedJid = [who]
     conn.sendFile(m.chat, await(await require('node-fetch')(pp)).buffer(), pp.jpg, str, m, false, { contextInfo: { mentionedJid }})
   }
 }
-handler.help = ['profile [@user]']
+handler.help = ['perfil [@user]']
 handler.tags = ['tools']
-handler.command = /^profile|pp$/i
+handler.command = /^perfil|profile$/i
 module.exports = handler
