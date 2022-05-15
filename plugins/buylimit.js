@@ -18,9 +18,9 @@ let handler = async (m, { conn, command, args }) => {
                           }
                         }
     conn.sendBut(m.chat, `-${xpperlimit * count} XP\n+ ${count} Limit`, wm, 'Buy All', '.buyall', fdoc)
-  } else conn.sendBut(m.chat, `XP tidak mencukupi untuk membeli ${count} limit`, wm, 'Klaim Harian', '.daily', fdoc)
+  } else conn.sendBut(m.chat, `XP no es suficiente para comprar ${count} limit`, wm, 'Reclamar', '.daily', fdoc)
 }
-handler.help = ['buy<jumlah limit>', 'buy <jumlah limit>', 'buyall']
+handler.help = ['buy<cantidad>', 'buy <cantidad>', 'buyall']
 handler.tags = ['xp']
 handler.command = /^buy([0-9]+)|buy|buyall$/i
 handler.owner = false
