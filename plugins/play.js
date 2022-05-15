@@ -4,11 +4,11 @@ let fs = require('fs')
 let yts = require('yt-search')
 let fetch = require('node-fetch')
 let handler = async (m, { conn, command, text, usedPrefix }) => {
-  if (!text) throw `╰⊱❗️⊱ *𝙇𝙊 𝙐𝙎𝙊́ 𝙈𝘼𝙇 | 𝙐𝙎𝙀𝘿 𝙄𝙏 𝙒𝙍𝙊𝙉𝙂* ⊱❗️⊱╮\n\n*Ejemplo | Example*\n*${usedPrefix + command}* Billie Eilish - Bellyache`
+  if (!text) throw `╰⊱❗️⊱ *𝙇𝙊 𝙐𝙎𝙊́ 𝙈𝘼𝙇* ⊱❗️⊱╮\n\n*Ejemplo*\n*${usedPrefix + command}* Billie Eilish - Bellyache`
   let chat = global.db.data.chats[m.chat]
   let results = await yts(text)
   let vid = results.all.find(video => video.seconds < 3600)
-  if (!vid) throw '╰⊱❌⊱ *𝙁𝘼𝙇𝙇𝙊́ | 𝙀𝙍𝙍𝙊𝙍* ⊱❌⊱╮\n\n*Contenido no encontrado*\n*Content not found*'
+  if (!vid) throw '╰⊱❌⊱ *𝙀𝙍𝙍𝙊𝙍* ⊱❌⊱╮\n\n*Contenido no encontrado*'
   let isVideo = /2$/.test(command)
   let yt = false
   let yt2 = false
@@ -21,22 +21,22 @@ let handler = async (m, { conn, command, text, usedPrefix }) => {
       usedServer = server
       break
     } catch (e) {
-      m.reply(`╰⊱❌⊱ *𝙁𝘼𝙇𝙇𝙊́ | 𝙀𝙍𝙍𝙊𝙍* ⊱❌⊱╮\n\n*Servidor | Server* !${server} ${servers.length >= i + 1 ? '' : '\n*Vuelva a intentar o informe el error.*\n*Please try again or report the error to fix it.*'}`)
+      m.reply(`╰⊱❌⊱ *𝙀𝙍𝙍𝙊𝙍* ⊱❌⊱╮\n\n*Servidor* !${server} ${servers.length >= i + 1 ? '' : '\n*Vuelva a intentar o informe el error.*'}`)
     }
   }
   if (yt === false) throw '╰⊱❌⊱ *𝙁𝘼𝙇𝙇𝙊́ | 𝙀𝙍𝙍𝙊𝙍* ⊱❌⊱╮\n\n*Todos los servidores fallaron.*\n*All servers failed.*'
   if (yt2 === false) throw '╰⊱❌⊱ *𝙁𝘼𝙇𝙇𝙊́ | 𝙀𝙍𝙍𝙊𝙍* ⊱❌⊱╮\n\n*Todos los servidores fallaron.*\n*All servers failed.*'
   let { dl_link, thumb, title, filesize, filesizeF, } = yt
 let anu =  `╭━━━━━━━━━━━━━━━━⬣
-┃ 💖  *Título | Title* 
+┃ 💖  *Título* 
 ┃ ➲ ${title}
-┃ 🔊 *Tamaño del Audio | Audio Size* 
+┃ 🔊 *Tamaño en Audio* 
 ┃ ➲ ${filesizeF}
-┃ 🎞 *Tamaño del vídeo | Video Size* 
+┃ 🎞 *Tamaño en vídeo* 
 ┃ ➲ ${yt2.filesizeF}
-┃ 💻 *Servidor | Server* 
+┃ 💻 *Servidor* 
 ┃ ➲ ${usedServer}
-┃ 🎁 *Enlace | Link* 
+┃ 🎁 *Enlace* 
 ┃ ➲ ${vid.url}
 ╰━━━━━━━━━━━━━━━━⬣ 
 `
