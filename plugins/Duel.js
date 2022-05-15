@@ -40,23 +40,23 @@ let handler = async ( m, { conn, args, command}) => {
 
      if (/dya/.test(command)) {
      let kenal = !who.includes(m.sender)
-     if(kenal) throw 'Lu siapa?\nkok ikut kut mau duel'
+     if(kenal) throw '¿Quién eres?\n¿Por qué te unes a mí para un duelo?'
      user.lastduel = new Date * 1
      if (Aku > Kamu) {
        user.money -= 900
        enemy.money += 900
        delete conn.duel[m.sender]
-       conn.reply(m.chat, `@${who.split("@")[0]} Menang Gelud🤼\n*Hadiah:*\n900 Money buat beli gorengan`.trim(), m)
+       conn.reply(m.chat, `@${who.split("@")[0]} Gana Gelud🤼\n*Presente:*\n900 Dinero para comprar papas fritas`.trim(), m)
      } else if (Aku < Kamu) {
        user.money += 450
        enemy.money -= 450
        delete conn.duel[m.sender]
-       conn.reply(m.chat, `@${who.split("@")[0]} Kalah Gelud🤼\n*Hadiah:*\n 450 money Mayan buat beli Limit`.trim(), m)
+       conn.reply(m.chat, `@${who.split("@")[0]} Gana Gelud🤼\n*Presente:*\n 450 dinero maya para comprar límite`.trim(), m)
      } else {
        user.money += 250
        enemy.money += 250
        delete conn.duel[m.sender]
-       conn.reply(m.chat, `@${who.split("@")[0]}\n *Seri*\n masing masing 250 Money`.trim(), m)
+       conn.reply(m.chat, `@${who.split("@")[0]}\n *Serie*\n cada 250 Dinero`.trim(), m)
      }
    }
    if (/dno/.test(command)) {
