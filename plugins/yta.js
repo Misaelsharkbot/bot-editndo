@@ -12,9 +12,9 @@ let handler = async (m, { conn, args, isPrems, isOwner, usedPrefix, command }) =
 ┏┉━━━━━━━━━━━❏
 ┆ *YOUTUBE MP3*
 ├┈┈┈┈┈┈┈┈┈┈┈
-┆• *Judul:* ${title}
-│• *Type:* MP3
-┆• *📥 Ukuran File:* ${filesizeF}
+┆• *💠 Titulo:* ${title}
+│• *✅ Modo:* MP3
+┆• *📥 Tamaño del archivo:* ${filesizeF}
 └❏
 `.trim(), m, null, {
     asDocument: chat.useDocument, mimetype: 'audio/mp4', ptt: true, contextInfo: {
@@ -43,6 +43,6 @@ handler.botAdmin = false
 
 handler.fail = null
 handler.exp = 0
-handler.limit = true
+handler.limit = false
 
 module.exports = handler
