@@ -16,38 +16,35 @@ let { perfomance } = require('perf_hooks')
 let moment = require('moment-timezone')
 const defaultMenu = {
   before:`
-╭━━「 *𝙋𝙖𝙣𝙚𝙡 | 𝘿𝙖𝙨𝙝𝙗𝙤𝙖𝙧𝙙* 」━━━⬣
-┃𓃠 *Versión de GataBot-MD*
+╭━━「 *𝙋𝙖𝙣𝙚𝙡* 」━━━⬣
+┃𓃠 𝐕𝐞𝐫𝐬𝐢ó𝐧 𝐝𝐞 𝐆𝐚𝐭𝐚𝐁𝐨𝐭-𝐌𝐃
 ┃➺ ${vs}
-┃━━━━ 「 𝙃𝙤𝙮 | 𝙏𝙤𝙙𝙖𝙮 」━━━━⬣
-┃ღ *Fecha | Date*
+┃━━━━ 「 𝙃𝙤𝙮」━━━━⬣
+┃ღ 𝐅𝐞𝐜𝐡𝐚
 ┃➺ %week %date
 ┃ ┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈
-┃ღ *Fecha Islámica | Islamic Date*
-┃➺ %dateIslamic
-┃ ┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈
-┃ღ *Tiempo | Time*
+┃ღ 𝐓𝐢𝐞𝐦𝐩𝐨
 ┃➺ %time
 ╰━━━━━━━━━━━━━━━━⬣
-╭━━「 *𝙐𝙨𝙪𝙖𝙧𝙞𝙤(𝙖) | 𝙐𝙨𝙚𝙧* 」━━━⬣
-┃ღ *Nombre | Name*:
+╭━━「 *𝙐𝙨𝙪𝙖𝙧𝙞𝙤(𝙖) 」━━━⬣
+┃ღ 𝐍𝐨𝐦𝐛𝐫𝐞:
 ┃➺ %name
 ┃ ┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈
-┃ღ *Estado | Status*: --
+┃ღ 𝐄𝐬𝐭𝐚𝐝𝐨: --
 ┃ ┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈
-┃ღ *Límite | Limit*: %limit
+┃ღ 𝐃𝐢𝐚𝐦𝐚𝐧𝐭𝐞𝐬: %limit
 ┃ ┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈
-┃ღ *Dinero | Money*: %money
+┃ღ 𝐃𝐢𝐧𝐞𝐫𝐨: %money
 ┃ ┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈
-┃ღ *Experiencia | Exp*: %totalexp
+┃ღ 𝐄𝐱𝐩: %totalexp
 ┃ ┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈
-┃ღ *Nivel | Level*: %level
+┃ღ 𝐍𝐢𝐯𝐞𝐥: %level
 ┃ ┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈
-┃ღ *Rol:*: %role
+┃ღ 𝐑𝐨𝐥: %role
 ╰━━━━━━━━━━━━━━━━⬣
-╭━━━「 *INFO CMD* 」━━━━━⬣
+╭━━━「 *𝐈𝐍𝐅𝐎 𝐂𝐌𝐃* 」━━━━━⬣
 ┃ *Ⓟ* = Premium
-┃ *Ⓛ* = Limit
+┃ *Ⓛ* = Diamantes
 ╰━━━━━━━━━━━━━━━━⬣
 %readmore`.trimStart(), 
  header: '╭━「 %category 」━⬣',
@@ -62,33 +59,32 @@ let handler = async (m, { conn, usedPrefix: _p, args, command }) => {
   let arrayMenu = ['info', 'all', 'absen', 'rpg', 'anime', 'downloader', 'game', 'fun', 'xp', 'github', 'group', 'image', 'quotes', 'admin', 'internet', 'islam', 'kerang', 'maker', 'owner', 'suara', 'premium', 'quotes', 'info', 'stalk', 'shortlink', 'sticker', 'tools']
   if (!arrayMenu.includes(teks)) teks = '404'
   if (teks == 'all') tags = {
-  'info': '*MENU INFO*',	  
-  'main': '*MENU UTAMA*',
-  'advanced': '*ADVANCED*',
-  'absen': '*MENU ABSEN*',
-  'anime': '*MENU ANIME*',
-  'sticker': '*MENU CONVERT*',
-  'downloader': '*MENU DOWNLOADER*',
-  'xp': '*MENU EXP*',
-  'fun': '*MENU FUN*',
-  'game': '*MENU GAME*',
-  'github': '*MENU GITHUB*',
-  'group': '*MENU GROUP*',
-  'image': '*MENU IMAGE*',
-  'info': '*MENU INFO*',
-  'internet': '*INTERNET*',
-  'islam' : '*MENU ISLAMI*',
-  'kerang': '*MENU KERANG*',
-  'maker': '*MENU MAKER*',
-  'owner': '*MENU OWNER*',
-  'Pengubah Suara': '*PENGUBAH SUARA*',
-  'premium': '*PREMIUM MENU*',
+  'info': '𝐈𝐍𝐅𝐎𝐑𝐌𝐀𝐂𝐈𝐎𝐍',	  
+  'main': '𝐏𝐑𝐈𝐍𝐂𝐈𝐏𝐀𝐋',
+  'advanced': '𝐀𝐕𝐀𝐍𝐙𝐀𝐃𝐎',
+  'absen': '𝐀𝐔𝐒𝐄𝐍𝐂𝐈𝐀',
+  'anime': '𝐀𝐍𝐈𝐌𝐄',
+  'sticker': '𝐒𝐓𝐈𝐂𝐊𝐄𝐑',
+  'downloader': '𝐃𝐄𝐒𝐂𝐀𝐑𝐆𝐀𝐒',
+  'xp': '𝐍𝐈𝐕𝐄𝐋 & 𝐄𝐂𝐎𝐍𝐎𝐌𝐈𝐀',
+  'fun': '𝐅𝐔𝐍',
+  'game': '𝐉𝐔𝐄𝐆𝐎𝐒',
+  'github': '𝐆𝐈𝐓𝐇𝐔𝐁',
+  'group': '𝐆𝐑𝐔𝐏𝐎',
+  'image': '𝐈𝐌𝐀𝐆𝐄𝐍',
+  'info': '𝐈𝐍𝐅𝐎𝐑𝐌𝐀𝐂𝐈𝐎𝐍',
+  'internet': '𝐈𝐍𝐓𝐄𝐑𝐍𝐄𝐓',
+  'kerang': '𝐁𝐎𝐋𝐀 𝐌𝐀𝐆𝐈𝐂𝐀',
+  'maker': '𝐅𝐀𝐁𝐑𝐈𝐂𝐀𝐑',
+  'owner': '𝐎𝐖𝐍𝐄𝐑',
+  'Pengubah Suara': '𝐅𝐈𝐋𝐓𝐑𝐎𝐒 𝐃𝐄 𝐕𝐎𝐙',
+  'premium': '𝐏𝐑𝐄𝐌𝐈𝐔𝐌',
   'quotes' : '*MENU QUOTES*',
-  'rpg': '*MENU RPG*',
+  'rpg': '𝐑𝐏𝐆',
   'stalk': '*MENU STALK*',
-  'shortlink': '*SHORT LINK',
-  'tools': '*MENU TOOLS*',
-  'vote': '*MENU VOTING*',
+  'shortlink': '𝐀𝐂𝐎𝐑𝐓𝐀𝐑',
+  'tools': '𝐀𝐉𝐔𝐒𝐓𝐄𝐒',
+  'vote': '𝐕𝐎𝐓𝐎𝐒',
   }
   if (teks == 'info') tags = {
   'info': '*MENU INFO*',
@@ -240,59 +236,59 @@ let help = Object.values(global.plugins).filter(plugin => !plugin.disabled).map(
         listMessage: {
             title: `╭─────────────────────❀\n│${ucapan()}\n│💖•.¸💝¸.• *${name}* •.¸💝¸.•💖\n╰─────────────────────❀`,
             description: `╭━━━━━━〔 *${wm}* 〕━━━━━━⬣	    
-┃✪ *Tiempo Actual | Current Time*	    
+┃✪ 𝐓𝐢𝐞𝐦𝐩𝐨 𝐚𝐜𝐭𝐮𝐚𝐥	    
 ┃➺ ${time}   
 ┃   ┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈
-┃✪ *Activa durante | Active during* 
+┃✪ 𝐀𝐜𝐭𝐢𝐯𝐨 𝐃𝐮𝐫𝐚𝐧𝐭𝐞 
 ┃➺ ${uptime}
 ┃   ┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈
-┃✪ *Versión de GataBot-MD*
+┃✪ 𝐕𝐞𝐫𝐬𝐢𝐨𝐧 𝐝𝐞 𝐆𝐚𝐭𝐚𝐁𝐨𝐭-𝐌𝐃
 ┃➺ ${vs}
 ┃   ┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈
-┃✪ *Usuario(s) | Users*
+┃✪ 𝐔𝐬𝐮𝐚𝐫𝐢𝐨(𝐬)
 ┃➺ ${Object.keys(global.db.data.users).length} 
 ┃   ┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈
-┃✪ *Modo | Mode*
+┃✪ 𝐌𝐨𝐝𝐨
 ┃➺ ${global.opts['self'] ? 'Self' : 'publik'}
 ┃   ┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈
-┃✪ *Chat(s) Prohibido(s) | Forbidden Chats*
+┃✪ 𝐆𝐫𝐮𝐩𝐨𝐬 𝐛𝐚𝐧𝐞𝐚𝐝𝐨𝐬
 ┃➺ ${Object.entries(global.db.data.chats).filter(chat => chat[1].isBanned).length} 
 ┃   ┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈
-┃✪ *Usuario(s) Prohibido(s) | Prohibited Users*
+┃✪ 𝐔𝐬𝐮𝐚𝐫𝐢𝐨𝐬 𝐛𝐚𝐧𝐞𝐚𝐝𝐨𝐬
 ┃➺ ${Object.entries(global.db.data.users).filter(user => user[1].banned).length}
 ╰━━━━━━━━━━━━━━━━━━━━━⬣`,
             buttonText: '𝙇𝙄𝙎𝙏𝘼 𝘿𝙀 𝙈𝙀𝙉𝙐 | 𝙇𝙄𝙎𝙏 𝙈𝙀𝙉𝙐',
             listType: 1,
-            footerText: "*PRESIONE ESTE MENSAJE PARA IR AL MENÚ.*\n*PRESS THIS MESSAGE TO GO TO THE MENU.*",
+            footerText: "*PRESIONE ESTE MENSAJE PARA IR AL MENÚ.*",
             mtype: 'listMessage',
             sections: [
               {
                 "rows": [{
                   "title": `𝘾𝙤𝙣𝙩𝙖𝙘𝙩𝙤 | 𝙊𝙬𝙣𝙚𝙧`,
-                  "description": "GataBot-MD no responde a dudas. Solo Gata Dios.\nGataBot-MD does not answer questions. Only Gata Dios.",
+                  "description": "GataBot-MD no responde a dudas. Solo Gata Dios.",
                   "rowId": `.owner`
                 },{
-                  "title": "𝙄𝙣𝙛𝙤𝙧𝙢𝙖𝙘𝙞𝙤́𝙣 𝙙𝙚 𝙂𝙖𝙩𝙖𝘽𝙤𝙩-𝙈𝘿 | 𝙄𝙣𝙛𝙤𝙧𝙢𝙖𝙩𝙞𝙤𝙣",
-                  "description": "Conoce más del menú.\nLearn more about the menu.",
+                  "title": "𝙄𝙣𝙛𝙤𝙧𝙢𝙖𝙘𝙞𝙤́𝙣 𝙙𝙚 𝙂𝙖𝙩𝙖𝘽𝙤𝙩-𝙈𝘿",
+                  "description": "Conoce más del menú.",
                   "rowId": `${_p}? info`
                 }],	      
                 "title": "INFORMASI BOT",
               }, {
                 "rows": [{
-		  "title": "☰ 𝙑𝙚𝙡𝙤𝙘𝙞𝙙𝙖𝙙 𝙙𝙚 𝙂𝙖𝙩𝙖𝘽𝙤𝙩-𝙈𝘿 | 𝙎𝙥𝙚𝙚𝙙",
-                  "description": "Comprueba la rapidez.\nCheck the speed.",
+		  "title": "☰ 𝙑𝙚𝙡𝙤𝙘𝙞𝙙𝙖𝙙 𝙙𝙚 𝙂𝙖𝙩𝙖𝘽𝙤𝙩-𝙈𝘿",
+                  "description": "Comprueba la rapidez.",
                   "rowId": `.ping` 
 		  }, {
-                  "title": `☰ 𝙈𝙚𝙣𝙪́ 𝙘𝙤𝙢𝙥𝙡𝙚𝙩𝙤 | 𝙁𝙪𝙡𝙡 𝙈𝙚𝙣𝙪`,
-                  "description": "Presentación de todo el Menú.\nPresentation of the entire Menu.",
+                  "title": `☰ 𝙈𝙚𝙣𝙪́ 𝙘𝙤𝙢𝙥𝙡𝙚𝙩𝙤`,
+                  "description": "Presentación de todo el Menú.",
                   "rowId": `.allmenu`
                   }, {
-                  "title": "☰ 𝘼𝙪𝙨𝙚𝙣𝙩𝙚 & 𝙑𝙤𝙩𝙤 | 𝘼𝙗𝙨𝙚𝙣𝙩𝙚𝙚 & 𝙑𝙤𝙩𝙚",
-                  "description": "Mostrando el Menú Ausente.\nShowing the Absent Menu.",
+                  "title": "☰ 𝘼𝙪𝙨𝙚𝙣𝙩𝙚 & 𝙑𝙤𝙩𝙤",
+                  "description": "Mostrando el Menú Ausente.",
                   "rowId": `${_p}? absen`
                 }, {
                   "title": "☰ 𝘼𝙣𝙞𝙢𝙚 𝙈𝙚𝙣𝙪.",
-                  "description": "Mostrar menú animado.\nShow Animated Menu",
+                  "description": "Mostrar menú animado.",
                   "rowId": `${_p}? anime`
                 }, {
                   "title": "☰ STICKER & CONVERTER",
@@ -528,18 +524,18 @@ function clockString(ms) {
 }
 function ucapan() {
   const time = moment.tz('America/Los_Angeles').format('HH')  //America/Los_Angeles  Asia/Jakarta   America/Toronto
-  res = "👋 *BIENVENIDO(A) | WELCOME* 👋"
+  res = "👋 *BIENVENIDO(A)* 👋"
   if (time >= 4) {
-    res = "🌇 *Buenos Días | Good Morning* ⛅"
+    res = "🌇 *Buenos Días* ⛅"
   }
   if (time >= 11) {
-    res = "🏙️ *Buenas Tardes | Good Afternoon* 🌤️"
+    res = "🏙️ *Buenas Tardes* 🌤️"
   }
   if (time >= 15) {
-    res = "🌆 *Buenas tardes | Good Afternoon* 🌥️"
+    res = "🌆 *Buenas tardes* 🌥️"
   }
   if (time >= 17) {
-    res = "🌃 *Buenas noches | Good Evening* 💫"
+    res = "🌃 *Buenas noches* 💫"
   }
   return res
 }
