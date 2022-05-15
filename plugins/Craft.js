@@ -36,24 +36,24 @@ let handler  = async (m, { conn, command, args, usedPrefix, DevMode }) => {
 └───┴───┴───┘
   
   
-▧ Pickaxe ⛏️
-▧ Sword ⚔️
-▧ Fishingrod 🎣
+▧ Pico ⛏️
+▧ Espada ⚔️
+▧ Caña de pescar 🎣
 
-*❏ RECIPE*
-▧ Pickaxe ⛏️
-〉 10 Kayu
-〉 5 Iron
-〉 20 String
+*❏ RECETA*
+▧ Pico ⛏️
+〉 10 madera
+〉 5 Hierro
+〉 20 cuerdas
 
-▧ Sword ⚔️
-〉 10 Kayu
-〉 15 Iron
+▧ Espada ⚔️
+〉 10 Madera
+〉 15 Hierro
 
-▧ Fishingrod 🎣
-〉 10 Kayu
-〉 2 Iron
-〉 20 String
+▧ Caña de pescar 🎣
+〉 10 Madera
+〉 2 Hierro
+〉 20 Cuerda
 `
 
   try {
@@ -61,54 +61,54 @@ let handler  = async (m, { conn, command, args, usedPrefix, DevMode }) => {
       const count = args[1] && args[1].length > 0 ? Math.min(99999999, Math.max(parseInt(args[1]), 1)) : !args[1] || args.length < 3 ? 1 : Math.min(1, count)
         switch (type) {
           case 'pickaxe':
-            if(user.kayu < 10 || user.iron < 5 || user.string < 20) return m.reply(`Barang tidak cukup!\nUntuk membuat pickaxe. Kamu memerlukan : \n10 kayu🪵 \n5 iron⛓\n20 String🕸️`)
+            if(user.kayu < 10 || user.iron < 5 || user.string < 20) return m.reply(`¡No hay suficientes cosas!\nPara hacer un pico. necesitas : \n10 madera🪵 \n5 Hierro⛓\n20 Cuerda🕸️`)
             global.db.data.users[m.sender].kayu -= 10
             global.db.data.users[m.sender].iron -= 5
             global.db.data.users[m.sender].string -= 20
             global.db.data.users[m.sender].pickaxe += 1
-            m.reply("Sukses membuat 1 pickaxe 🔨")
+            m.reply("Éxito en la fabricación de 1 pico 🔨")
             break
           case 'sword':
-            if(user.kayu < 10 || user.iron < 5 || user.string < 20) return m.reply(`Barang tidak cukup!\nUntuk membuat sword. Kamu memerlukan : 10 kayu🪵 5 iron⛓️ dan 20 String🕸️`)
+            if(user.kayu < 10 || user.iron < 5 || user.string < 20) return m.reply(`¡No hay suficientes artículos!\nPara hacer una espada. necesitas : 10 madera🪵 5 Hierro⛓️ y 20 Cuerda🕸️`)
             global.db.data.users[m.sender].kayu -= 10
             global.db.data.users[m.sender].iron -= 15
             global.db.data.users[m.sender].sword += 1
-            m.reply("Sukses membuat 1 sword 🗡️")
+            m.reply("Hizo con éxito 1 espada 🗡️")
             break
           case 'pancing':
-            if(user.kayu < 20 || user.iron < 5 || user.string < 20) return m.reply(`Barang tidak cukup!\nUntuk membuat pancingan. Kamu memerlukan :\n10 kayu🪵\n5 iron⛓\n20 String🕸️`)
+            if(user.kayu < 20 || user.iron < 5 || user.string < 20) return m.reply(`¡No hay suficientes cosas!\nPara hacer una caña de pescar. necesitas :\n10 madera🪵\n5 Hierro⛓\n20 Cuerda🕸️`)
             global.db.data.users[m.sender].kayu -= 10
             global.db.data.users[m.sender].iron -= 2
             global.db.data.users[m.sender].string -= 20
             global.db.data.users[m.sender].pancing += 1
-            m.reply("Sukses membuat 1 Pancingan 🎣")
+            m.reply("Éxito en la fabricación de 1 caña de pescar 🎣")
             break
 
           default:
             return conn.relayWAMessage(conn.prepareMessageFromContent(m.chat, {
         "listMessage": {
-          "title": `*❏ CRAFTING TABLE*`.trim(),
+          "title": `*❏ MESA DE ARTESANÍA*`.trim(),
           "description": caption.trim(),
           "footerText": '',
           "buttonText": 'CRAFT',
-          "listType": "SINGLE_SELECT",
+          "listType": "SELECCIÓNA",
           "sections": [
                             {
                                 "rows": [{
-                                         "title": 'PICKAXE ⛏️',
+                                         "title": 'PICO ⛏️',
                                          "description": 'Crafting a Pickaxe',
                                          "rowId": '.craft pickaxe'
                                     }, {
-                                         "title": 'SWORD ⚔️',
+                                         "title": 'ESPADA ⚔️',
                                          "description": 'Crafting a Sword',
                                          "rowId": ".craft sword"
                                          }, {
-                                         "title": 'FISHINGROD 🎣',
+                                         "title": 'CAÑA DE PESCAR 🎣',
                                          "description": 'Crafting a Fishingrod',
                                          "rowId": ".craft fishingrod"
                                     
                        }],
-                    "title": '▧ LIST CRAFTING'
+                    "title": '▧ LISTA DE ARTESANÍA'
                   }
                         ], "contextInfo": 
                          { "stanzaId": m.key.id,
