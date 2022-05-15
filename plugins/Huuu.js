@@ -12,23 +12,23 @@ function pickRandom(list) {
   return list[Math.floor(list.length * Math.random())]
 }
 let stikerhuuu = [
- "https://telegra.ph/file/fa2bbea0f7de2575cf027.png",//patrick huu
- "https://telegra.ph/file/4a2db7bc9f3f9ecfc007d.png",//anime yntkts
- "https://telegra.ph/file/5f6079714851d9927697e.png",//windah bocil
- "https://telegra.ph/file/d5100b4ce95a0012e88c1.png",//patrick bawa minum
- "https://telegra.ph/file/2ade25087c89f86587853.png",//pak polisi pap tt
- "https://telegra.ph/file/eb2b5e5fff569896c1639.png",//kucing1
- "https://telegra.ph/file/bd8a0e7ea01218531798b.png",//kacamata
- "https://telegra.ph/file/300610838ffa0e6576eb9.png",//patrick pembohong
- "https://telegra.ph/file/954afe562e58c144620ae.png",//spongebob FBI
- "https://telegra.ph/file/72026dcc46e4cb4b6f9ae.png",//mazowski monster inc
- "https://telegra.ph/file/aa9f1bea869e362e6f56e.png",//wkwk
- "https://telegra.ph/file/09bbff0da316ba21b4f8e.png",//kucing2
- "https://telegra.ph/file/2e0637d57e3cc1abcb4a0.png",//patrick anak setan
- "https://telegra.ph/file/d771ae015b5486859d03f.png",//mazowski 2
- "https://telegra.ph/file/9c7606f571c05b4d0c941.png",//hengker
- "https://telegra.ph/file/84fd937257bcd614d6c9e.png",//anjing
- "https://telegra.ph/file/b8ba6989c00c50df049d0.png",//bapak bapak lovee
- "https://telegra.ph/file/2f618fffab6ff7bea32ab.png",//abang saleh
- "https://telegra.ph/file/dfbf483c209a31f01b4e5.png"//hengker2
+ "https://telegra.ph/file/f7469d1d38d34c4599d61.png",//patrick huu
+ "https://telegra.ph/file/8a9366fcae3c0b8178140.png",//anime yntkts
+ "https://telegra.ph/file/304efc382ee4777f07116.png",//windah bocil
+ "https://telegra.ph/file/a52e7b298a8c590a2498a.png",//patrick bawa minum
+ "https://telegra.ph/file/c85b27286e1bf656356d5.png",//pak polisi pap tt
+ "https://telegra.ph/file/616c6d6c63f16829375db.png",//kucing1
+ "https://telegra.ph/file/70e5974cdba1932e5c0b4.png",//kacamata
+ "https://telegra.ph/file/c5186fa3a0c806f83acff.png",//patrick pembohong
+ "https://telegra.ph/file/a7f3128c30bc9d84c6e61.png",//spongebob FBI
+ "https://telegra.ph/file/a7f3128c30bc9d84c6e61.png",//mazowski monster inc
+ "https://telegra.ph/file/a7f3128c30bc9d84c6e61.png",//wkwk
+ "https://telegra.ph/file/f7469d1d38d34c4599d61.png",//kucing2
+ "https://telegra.ph/file/a7f3128c30bc9d84c6e61.png",//patrick anak setan
+ "https://telegra.ph/file/c5186fa3a0c806f83acff.png",//mazowski 2
+ "https://telegra.ph/file/616c6d6c63f16829375db.png",//hengker
+ "https://telegra.ph/file/a52e7b298a8c590a2498a.png",//anjing
+ "https://telegra.ph/file/304efc382ee4777f07116.png",//bapak bapak lovee
+ "https://telegra.ph/file/f7469d1d38d34c4599d61.png",//abang saleh
+ "https://telegra.ph/file/c85b27286e1bf656356d5.png"//hengker2
 ]
