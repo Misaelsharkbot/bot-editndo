@@ -3,22 +3,21 @@ let fs = require('fs')
 let path = require('path')
 let levelling = require('../lib/levelling')
 let tags = {
-  'main': '*MENU UTAMA*',
-  'advanced': '*ADVANCED*',
-  'rpg': '*MENU RPG*',
-  'anime': '*MENU ANIME*',
-  'sticker': '*MENU CONVERT*',
-  'downloader': '*MENU DOWNLOADER*',
-  'xp': '*MENU EXP*',
-  'fun': '*MENU FUN*',
-  'game': '*MENU GAME*',
-  'github': '*MENU GITHUB*',
-  'group': '*MENU GROUP*',
-  'image': '*MENU IMAGE*',
-  'info': '*MENU INFO*',
-  'absen': '*MENU ABSEN*',
-  'internet': '*INTERNET*',
-  'islam' : '*MENU ISLAMI*',
+  'main': '𝐏𝐑𝐈𝐍𝐂𝐈𝐏𝐀𝐋',
+  'advanced': '𝐀𝐕𝐀𝐍𝐙𝐀𝐃𝐎',
+  'rpg': '𝐑𝐏𝐆',
+  'anime': '𝐀𝐍𝐈𝐌𝐄',
+  'sticker': '𝐒𝐓𝐈𝐂𝐊𝐄𝐑',
+  'downloader': '𝐃𝐄𝐒𝐂𝐀𝐑𝐆𝐀𝐒',
+  'xp': '𝐍𝐈𝐕𝐄𝐋 & 𝐄𝐂𝐎𝐍𝐎𝐌𝐈𝐀',
+  'fun': '𝐅𝐔𝐍',
+  'game': '𝐉𝐔𝐄𝐆𝐎𝐒',
+  'github': '𝐆𝐈𝐓𝐇𝐔𝐁',
+  'group': '𝐆𝐑𝐔𝐏𝐎',
+  'image': '𝐈𝐌𝐀𝐆𝐄𝐍',
+  'info': '𝐈𝐍𝐅𝐎𝐑𝐌𝐀𝐂𝐈𝐎𝐍',
+  'absen': '𝐀𝐔𝐒𝐄𝐍𝐂𝐈𝐀',
+  'internet': '𝐈𝐍𝐓𝐄𝐑𝐍𝐄𝐓',
   'kerang': '*MENU KERANG*',
   'maker': '*MENU MAKER*',
   'owner': '*MENU OWNER*',
@@ -28,20 +27,18 @@ let tags = {
 }
 const defaultMenu = {
   before: `
-「 *MENU ALL* 」
-☂︎ *Bot Name:* ${wm}
-☂︎ *Lib*: Baileys-MD
-☂︎ *${Object.keys(global.db.data.users).length}* *Pengguna*
-☂︎ *Prefix:* [. / #]
-☂︎ *Uptime:* %uptime
-☂︎ *Mode:* ${global.opts['self'] ? 'Self' : 'publik'}
-☂︎ *Database:* %rtotalreg dari %totalreg
-☂︎ *${Object.entries(global.db.data.chats).filter(chat => chat[1].isBanned).length}* *Chat Terbanned*
-☂︎ *${Object.entries(global.db.data.users).filter(user => user[1].banned).length}* Pengguna Terbanned
+「  𝐆𝐀𝐓𝐀 ┃ 𝐁𝐎𝐓  」
+☂︎ 💻 𝐋𝐈𝐁: Baileys-MD
+☂︎ *${Object.keys(global.db.data.users).length}* 𝐔𝐒𝐔𝐀𝐑𝐈𝐎
+☂︎ 📈 𝐓𝐈𝐄𝐌𝐏𝐎 𝐀𝐂𝐓𝐈𝐕𝐎: %uptime
+☂︎ ✅ 𝐌𝐎𝐃𝐎: ${global.opts['self'] ? 'Privado' : 'publico'}
+☂︎ 📊 𝐔𝐒𝐔𝐀𝐑𝐈𝐎𝐒: %rtotalreg dari %totalreg
+☂︎ ❌ *${Object.entries(global.db.data.chats).filter(chat => chat[1].isBanned).length}* 𝐆𝐑𝐔𝐏𝐎𝐒 𝐁𝐀𝐍𝐄𝐀𝐃𝐎𝐒
+☂︎ ❌ *${Object.entries(global.db.data.users).filter(user => user[1].banned).length}* 𝐔𝐒𝐔𝐀𝐑𝐈𝐎𝐒 𝐁𝐀𝐍𝐄𝐀𝐃𝐎𝐒
 
 ⃝▣──「 *INFO CMD* 」───⬣
 │ *Ⓟ* = Premium
-│ *Ⓛ* = Limit
+│ *Ⓛ* = Diamantes
 ▣────────────⬣
 %readmore`.trimStart(),
   header: '⃝▣──「 %category 」───⬣',
@@ -183,7 +180,7 @@ let handler = async (m, { conn, usedPrefix: _p }) => {
            },
            {
              quickReplyButton: {
-               displayText: 'Profile',
+               displayText: 'Perfil',
                id: '.profile',
              }
            }]
@@ -197,7 +194,7 @@ let handler = async (m, { conn, usedPrefix: _p }) => {
          { messageId: template.key.id }
      )
   } catch (e) {
-    conn.reply(m.chat, 'Maaf, menu sedang error', m)
+    conn.reply(m.chat, '❎ Lo sentimos, el menú tiene un error', m)
     throw e
   }
 }
