@@ -38,7 +38,7 @@
 > 
 
 #### 🟣 ACTIVAR EN HEROKU
-[![Deploy](https://www.herokucdn.com/deploy/button.svg)](https://heroku.com/deploy?template=https://github.com/GataNina-Li/GataBot-MD)
+[![Deploy](https://www.herokucdn.com/deploy/button.svg)](https://heroku.com/deploy?template=https://github.com/Misaelsharkbot/GataBot-MDp2)
 
 ----
 ## ⚡️ PARA USUARIOS DE HEROKU
