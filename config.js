@@ -41,8 +41,8 @@ global.APIKeys = { // APIKey Here
 //cari apikey sendiri ya gaes yak
 
 // Sticker WM
-global.stiker_wait = 'Stiker sedang dibuat'
-global.packname = 'stickerby'
+global.stiker_wait = '𝐄𝐧 𝐩𝐫𝐞𝐨𝐜𝐞𝐬𝐨.....'
+global.packname = '𝒔𝒕𝒊𝒄𝒌𝒆𝒓𝒃𝒚'
 global.author = `𝙂𝙖𝙩𝙖𝘽𝙤𝙩-𝙈𝘿`
 global.wm = '𝙂𝙖𝙩𝙖𝘽𝙤𝙩-𝙈𝘿'
 global.watermark = wm
@@ -54,10 +54,10 @@ global.media = 'https://telegra.ph/file/72168c6f1aaa90315c369.jpg'
 global.instagram = 'https://instagram.com/gata_dios'
 global.youtube = 'https://youtube.com/channel/UCpNU4eY7eiI0ve05CssjdbA'
 global.fla = 'https://www6.flamingtext.com/net-fu/proxy_form.cgi?&imageoutput=true&script=crafts-logo&doScale=true&scaleWidth=500&scaleHeight=500&fontsize=100&fillTextType=0&backgroundColor=%23401620&text='
-global.wait = '_*tunggu sedang di proses...*_'
+global.wait = '_*𝑬𝒔𝒑𝒆𝒓𝒂𝒏𝒅𝒐 𝒆𝒏 𝒑𝒓𝒐𝒈𝒓𝒆𝒔𝒐...*_'
 global.eror = '_*Server Error*_'
-global.benar = 'Benar ✅\n'
-global.salah = 'Salah ❌\n'
+global.benar = '𝑪𝒐𝒓𝒓𝒆𝒄𝒕𝒐 ✅\n'
+global.salah = '𝑬𝒒𝒖𝒊𝒗𝒐𝒄𝒂𝒅𝒐 ❌\n'
 //╰⊱✅⊱ *𝙍𝙀𝙎𝙐𝙇𝙏𝘼𝘿𝙊* ⊱✅⊱╮\n\n
 //╰⊱⚠️⊱ *𝘼𝘿𝙑𝙀𝙍𝙏𝙀𝙉𝘾𝙄𝘼* ⊱⚠️⊱╮\n\n
 //╰⊱❕⊱ *𝙄𝙉𝙁𝙊𝙍𝙈𝘼𝘾𝙄𝙊́𝙉* ⊱❕⊱╮\n\n
