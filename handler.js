@@ -750,16 +750,16 @@ module.exports = {
 
 global.dfail = (type, m, conn) => {
     let msg = {
-        rowner: '╰⊱⚠️⊱ *𝘼𝘿𝙑𝙀𝙍𝙏𝙀𝙉𝘾𝙄𝘼* ⊱⚠️⊱╮\n\n_*¡¡Este comando solo lo puede usar Mí Creador(a)!!*_\n_*¡¡This command can only be used by My Creator!!*_',
-        owner: '╰⊱⚠️⊱ *𝘼𝘿𝙑𝙀𝙍𝙏𝙀𝙉𝘾𝙄𝘼* ⊱⚠️⊱╮\n\n_*¡¡Este comando solo puede ser utilizado por Owner Bot!!*_\n_*¡¡This command can only be used by Owner Bot!!*_',
-        mods: '╰⊱⚠️⊱ *𝘼𝘿𝙑𝙀𝙍𝙏𝙀𝙉𝘾𝙄𝘼* ⊱⚠️⊱╮\n\n_*¡¡Este comando solo puede ser utilizado por Moderador(es)!!*_\n_*¡¡This command can only be used by Moderator!!*_',
-        premium: '╰⊱⚠️⊱ *𝘼𝘿𝙑𝙀𝙍𝙏𝙀𝙉𝘾𝙄𝘼* ⊱⚠️⊱╮\n\n_*¡¡Este comando es solo para miembros Premium!!*_\n_*¡¡This command is only for Premium members!!*_',
-        group: '╰⊱⚠️⊱ *𝘼𝘿𝙑𝙀𝙍𝙏𝙀𝙉𝘾𝙄𝘼* ⊱⚠️⊱╮\n\n_*¡¡Este comando solo se puede usar en grupos!!*_\n_*¡¡This command can only be used in groups!!*_',
-        private: '╰⊱⚠️⊱ *𝘼𝘿𝙑𝙀𝙍𝙏𝙀𝙉𝘾𝙄𝘼* ⊱⚠️⊱╮\n\n_*¡¡Este comando solo se puede usar en el chat privado!!*_\n_*¡¡This command can only be used in private chatc',
-        admin: '╰⊱⚠️⊱ *𝘼𝘿𝙑𝙀𝙍𝙏𝙀𝙉𝘾𝙄𝘼* ⊱⚠️⊱╮\n\n_*¡¡Este comando es solo para Administradores!!*_\n_*¡¡This command is for Administrators only!!*_',
-        botAdmin: '╰⊱⚠️⊱ *𝘼𝘿𝙑𝙀𝙍𝙏𝙀𝙉𝘾𝙄𝘼* ⊱⚠️⊱╮\n\n_*¡¡Haz que el bot sea Administrador para usar este comando!!*_\n_*¡¡Make the bot an Admin to use this command!!*_',
-        unreg: '╰⊱⚠️⊱ *𝘼𝘿𝙑𝙀𝙍𝙏𝙀𝙉𝘾𝙄𝘼* ⊱⚠️⊱╮\n\n*Regístrese para usar esta función escribiendo:*\n*#registrar nombres.edad*\n*Ejemplo: #registrar GataDios.18*\n\n*Sign up to use this feature by typing:*\n*#daftar name.age*\n*Example: #daftar GataDios.18*',
-        restrict: '╰⊱⚠️⊱ *𝘼𝘿𝙑𝙀𝙍𝙏𝙀𝙉𝘾𝙄𝘼* ⊱⚠️⊱╮\n\n_*¡¡Esta función está *deshabilitada | disable!!*_\n_*¡¡This feature is disabled | disable!!*_'
+        rowner: '╰⊱⚠️⊱ *𝘼𝘿𝙑𝙀𝙍𝙏𝙀𝙉𝘾𝙄𝘼* ⊱⚠️⊱╮\n\n_*¡¡Este comando solo lo puede usar Mí Creador(a)!!*_',
+        owner: '╰⊱⚠️⊱ *𝘼𝘿𝙑𝙀𝙍𝙏𝙀𝙉𝘾𝙄𝘼* ⊱⚠️⊱╮\n\n_*¡¡Este comando solo puede ser utilizado por Owner Bot!!*_',
+        mods: '╰⊱⚠️⊱ *𝘼𝘿𝙑𝙀𝙍𝙏𝙀𝙉𝘾𝙄𝘼* ⊱⚠️⊱╮\n\n_*¡¡Este comando solo puede ser utilizado por Moderador(es)!!*_',
+        premium: '╰⊱⚠️⊱ *𝘼𝘿𝙑𝙀𝙍𝙏𝙀𝙉𝘾𝙄𝘼* ⊱⚠️⊱╮\n\n_*¡¡Este comando es solo para miembros Premium!!*_',
+        group: '╰⊱⚠️⊱ *𝘼𝘿𝙑𝙀𝙍𝙏𝙀𝙉𝘾𝙄𝘼* ⊱⚠️⊱╮\n\n_*¡¡Este comando solo se puede usar en grupos!!*_',
+        private: '╰⊱⚠️⊱ *𝘼𝘿𝙑𝙀𝙍𝙏𝙀𝙉𝘾𝙄𝘼* ⊱⚠️⊱╮\n\n_*¡¡Este comando solo se puede usar en el chat privado!!*_',
+        admin: '╰⊱⚠️⊱ *𝘼𝘿𝙑𝙀𝙍𝙏𝙀𝙉𝘾𝙄𝘼* ⊱⚠️⊱╮\n\n_*¡¡Este comando es solo para Administradores!!*_',
+        botAdmin: '╰⊱⚠️⊱ *𝘼𝘿𝙑𝙀𝙍𝙏𝙀𝙉𝘾𝙄𝘼* ⊱⚠️⊱╮\n\n_*¡¡Haz que el bot sea Administrador para usar este comando!!*_',
+        unreg: '╰⊱⚠️⊱ *𝘼𝘿𝙑𝙀𝙍𝙏𝙀𝙉𝘾𝙄𝘼* ⊱⚠️⊱╮\n\n*Regístrese para usar esta función escribiendo:*\n*#registrar nombres.edad*\n*Ejemplo: #registrar GataDios.18*',
+        restrict: '╰⊱⚠️⊱ *𝘼𝘿𝙑𝙀𝙍𝙏𝙀𝙉𝘾𝙄𝘼* ⊱⚠️⊱╮\n\n_*¡¡Esta función está *deshabilitada | disable!!*_'
     }[type]
     if (msg) return m.reply(msg)
 }
