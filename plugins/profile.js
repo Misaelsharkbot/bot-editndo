@@ -13,15 +13,15 @@ let handler = async (m, { conn }) => {
     let str = `
 
 ✧───────[ *PROFILE* ]───────✧
-📇 • *Nombre:* ${username} ${registered ? '(' + name + ') ': ''}
-📧 • *Etiqueta:* @${who.replace(/@.+/, '')}
-📞 • *Numero:* ${PhoneNumber('+' + who.replace('@s.whatsapp.net', '')).getNumber('international')}
-💻 • *Link:* https://wa.me/${who.split`@`[0]}
+📇 • 𝑵𝒐𝒎𝒃𝒓𝒆: ${username} ${registered ? '(' + name + ') ': ''}
+📧 • 𝑬𝒕𝒊𝒒𝒖𝒆𝒕𝒂: @${who.replace(/@.+/, '')}
+📞 • 𝑵𝒖𝒎𝒆𝒓𝒐: ${PhoneNumber('+' + who.replace('@s.whatsapp.net', '')).getNumber('international')}
+💻 • 𝑳𝒊𝒏𝒌: https://wa.me/${who.split`@`[0]}
 ${registered ? '🎨 • *Edad:* ' + age : ''}
 
-🌟 • *Premium:* ${premium ? "✅" :"❌"}
-📑 • *Registrado:* ${registered ? '✅': '❌'}
-⛔ • *Baneado:* ❌
+🌟 • 𝑷𝒓𝒆𝒎𝒊𝒖𝒎: ${premium ? "✅" :"❌"}
+📑 • 𝑹𝒆𝒈𝒊𝒔𝒕𝒓𝒂𝒅𝒐: ${registered ? '✅': '❌'}
+⛔ • 𝑩𝒂𝒏𝒆𝒂𝒅𝒐: ❌
 
 `.trim()
     let mentionedJid = [who]
