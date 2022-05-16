@@ -1,7 +1,7 @@
-const { default: makeWASocket, BufferJSON, WA_DEFAULT_EPHEMERAL, generateWAMessageFromContent, downloadContentFromMessage, downloadHistory, proto, getMessage, generateWAMessageContent, prepareWAMessageMedia } = require('@adiwajshing/baileys')
-let fs = require('fs')
-let path = require('path')
-let levelling = require('../lib/levelling')
+import { promises } from 'fs'
+import { join } from 'path'
+import fetch from 'node-fetch'
+import { xpRange } from '../lib/levelling.js'
 let tags = {
   'main': '𝐏𝐑𝐈𝐍𝐂𝐈𝐏𝐀𝐋',
   'advanced': '𝐀𝐕𝐀𝐍𝐙𝐀𝐃𝐎',
