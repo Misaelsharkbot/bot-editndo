@@ -249,7 +249,7 @@ let help = Object.values(global.plugins).filter(plugin => !plugin.disabled).map(
 ┃➺ ${Object.keys(global.db.data.users).length} 
 ┃   ┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈
 ┃✪ 𝐌𝐨𝐝𝐨
-┃➺ ${global.opts['self'] ? 'Self' : 'publik'}
+┃➺ ${global.opts['self'] ? 'Privado' : 'Publico'}
 ┃   ┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈
 ┃✪ 𝐆𝐫𝐮𝐩𝐨𝐬 𝐛𝐚𝐧𝐞𝐚𝐝𝐨𝐬
 ┃➺ ${Object.entries(global.db.data.chats).filter(chat => chat[1].isBanned).length} 
@@ -257,14 +257,14 @@ let help = Object.values(global.plugins).filter(plugin => !plugin.disabled).map(
 ┃✪ 𝐔𝐬𝐮𝐚𝐫𝐢𝐨𝐬 𝐛𝐚𝐧𝐞𝐚𝐝𝐨𝐬
 ┃➺ ${Object.entries(global.db.data.users).filter(user => user[1].banned).length}
 ╰━━━━━━━━━━━━━━━━━━━━━⬣`,
-            buttonText: '𝙇𝙄𝙎𝙏𝘼 𝘿𝙀 𝙈𝙀𝙉𝙐 | 𝙇𝙄𝙎𝙏 𝙈𝙀𝙉𝙐',
+            buttonText: '𝙇𝙄𝙎𝙏𝘼 𝘿𝙀 𝙈𝙀𝙉𝙐',
             listType: 1,
             footerText: "*PRESIONE ESTE MENSAJE PARA IR AL MENÚ.*",
             mtype: 'listMessage',
             sections: [
               {
                 "rows": [{
-                  "title": `𝘾𝙤𝙣𝙩𝙖𝙘𝙩𝙤 | 𝙊𝙬𝙣𝙚𝙧`,
+                  "title": `𝙊𝙬𝙣𝙚𝙧`,
                   "description": "GataBot-MD no responde a dudas. Solo Gata Dios.",
                   "rowId": `.owner`
                 },{
@@ -291,63 +291,63 @@ let help = Object.values(global.plugins).filter(plugin => !plugin.disabled).map(
                   "description": "Mostrar menú animado.",
                   "rowId": `${_p}? anime`
                 }, {
-                  "title": "☰ STICKER & CONVERTER",
+                  "title": "☰ 𝑺𝒕𝒊𝒄𝒌𝒆𝒓",
                   "description": "Menampilkan Menu Sticker",
                   "rowId": `${_p}? sticker`
                 }, {
-                  "title": "☰ DOWNLOADER MENU",
+                  "title": "☰ 𝑫𝒆𝒔𝒄𝒂𝒓𝒈𝒂𝒔",
                   "description": "Menampilkan Menu Downloader",
                   "rowId": `${_p}? downloader`
                 }, {
-                  "title": "☰ EXP & LIMIT",
+                  "title": "☰ 𝑵𝒊𝒗𝒆𝒍 & 𝑬𝒄𝒐𝒏𝒐𝒎𝒊𝒂",
                   "description": "Menampilkan Menu Exp",
                   "rowId": `${_p}? xp`
                 }, {
-                  "title": "☰ FUN MENU",
+                  "title": "☰ 𝐅𝐔𝐍",
                   "description": "Menampilkan Menu Fun",
                   "rowId": `${_p}? fun`
                 }, {
-                  "title": "☰ GAME MENU",
+                  "title": "☰ 𝑱𝒖𝒆𝒈𝒐𝒔",
                   "description": "Menampilkan Menu Game",
                   "rowId": `${_p}? game`
                 }, {
-                  "title": "☰ GITHUB MENU",
+                  "title": "☰ 𝑮𝒊𝒕𝒉𝒖𝒃",
                   "description": "Menampilkan Menu Github",
                   "rowId": `${_p}? github`
                 }, {
-                  "title": "☰ GROUP MENU",
+                  "title": "☰ 𝑮𝒓𝒖𝒑𝒐",
                   "description": "Menampilkan Menu Group",
                   "rowId": `${_p}? group`
                 }, {
-                  "title": "☰ IMAGE MENU",
+                  "title": "☰ 𝑰𝒎𝒂𝒈𝒆𝒏",
                   "description": "Menampilkan Menu Image",
                   "rowId": `${_p}? image`
                 }, {
-                  "title": "☰ INTERNET MENU",
+                  "title": "☰ 𝑰𝒏𝒕𝒆𝒓𝒏𝒆𝒕",
                   "description": "Menampilkan Menu Internet",
                   "rowId": `${_p}? internet`
                 }, {
-                  "title": "☰ ISLAM MENU",
+                  "title": "☰ ISLAM",
                   "description": "Menampilkan Menu Islam",
                   "rowId": `${_p}? islam`
                 }, {
-                  "title": "☰ KERANG AJAIB",
+                  "title": "☰ 𝑩𝒐𝒍𝒂 𝒎𝒂𝒈𝒊𝒄𝒂",
                   "description": "Menampilkan Menu Kerang",
                   "rowId": `${_p}? kerang`
                 }, {
-                  "title": "☰ MAKER MENU",
+                  "title": "☰ 𝑴𝑨𝑲𝑬𝑹",
                   "description": "Menampilkan Menu Maker",
                   "rowId": `${_p}? maker`
                 }, {
-                  "title": "☰ OWNER MENU",
+                  "title": "☰ 𝑶𝑾𝑵𝑬𝑹",
                   "description": "Menampilkan Menu Owner",
                   "rowId": `${_p}? owner`
                 }, {
-                  "title": "☰ PENGUBAH SUARA",
+                  "title": "☰ 𝑭𝒊𝒍𝒕𝒓𝒐𝒔 𝒅𝒆 𝑽𝒐𝒛",
                   "description": "Menampilkan Menu Voice Changer",
                   "rowId": `${_p}? suara`
                 }, {
-                  "title": "☰ PREMIUM MENU",
+                  "title": "☰ 𝑷𝒓𝒆𝒎𝒊𝒖𝒎",
                   "description": "Menampilkan Menu Premium",
                   "rowId": `${_p}? premium`
                 }, {
@@ -355,7 +355,7 @@ let help = Object.values(global.plugins).filter(plugin => !plugin.disabled).map(
                   "description": "Menampilkan Menu Quotes",
                   "rowId": `${_p}? quotes`
                 }, {
-                  "title": "☰ RPG MENU",
+                  "title": "☰ 𝑹𝑷𝑮",
                   "description": "Menampilkan Menu Rpg",
                   "rowId": `${_p}? rpg`
                 }, {
@@ -363,16 +363,16 @@ let help = Object.values(global.plugins).filter(plugin => !plugin.disabled).map(
                   "description": "Menampilkan Menu Stalker",
                   "rowId": `${_p}? stalk`
                 }, {
-                  "title": "☰ SHORT LINK",
+                  "title": "☰ 𝑴𝒐𝒅𝒊𝒇𝒊𝒄𝒂𝒅𝒐𝒓 𝒅𝒆 𝒍𝒊𝒏𝒌",
                   "description": "Menampilkan Menu Short Link",
                   "rowId": `${_p}? shortlink`
                 }, {
-                  "title": "☰ TOOLS MENU",
+                  "title": "☰ 𝑨𝒋𝒖𝒔𝒕𝒆𝒔,
                   "description": "Menampilkan Menu Tools",
                   "rowId": `${_p}? tools`
                 }
                   ],
-                "title": "LIST MENU"
+                "title": "𝑳𝒊𝒔𝒕𝒂 𝒅𝒆 𝑴𝒆𝒏𝒖𝒔"
               }
             ], "contextInfo": {
               "stanzaId": m.key.id,
@@ -472,13 +472,13 @@ let help = Object.values(global.plugins).filter(plugin => !plugin.disabled).map(
            },
            {
              quickReplyButton: {
-               displayText: '𝙋𝙚𝙧𝙛𝙞𝙡 | 𝙋𝙧𝙤𝙛𝙞𝙡𝙚',
+               displayText: '𝙋𝙚𝙧𝙛𝙞𝙡',
                id: '.profile',
              }
 	   },
            {
              quickReplyButton: {
-               displayText: '𝙑𝙤𝙡𝙫𝙚𝙧 𝙖𝙡 𝙈𝙚𝙣𝙪́ | 𝘽𝙖𝙘𝙠 𝙩𝙤 𝙈𝙚𝙣𝙪',
+               displayText: '𝙑𝙤𝙡𝙫𝙚𝙧 𝙖𝙡 𝙈𝙚𝙣𝙪́',
                id: '.menu',
              }
            }]
@@ -492,7 +492,7 @@ let help = Object.values(global.plugins).filter(plugin => !plugin.disabled).map(
          { messageId: template.key.id }
      )
 } catch (e) {
-    conn.reply(m.chat, '╰⊱❌⊱ *𝙁𝘼𝙇𝙇𝙊́ | 𝙀𝙍𝙍𝙊𝙍* ⊱❌⊱╮\n\n*Lo siento, el Menú tiene un error. Informa inmediatamente a mí Creadora para una pronta solución.*\n*Sorry, the Menu has an error. Report immediately to my Creator for a prompt solution.*', m)
+    conn.reply(m.chat, '╰⊱❌⊱ *𝙀𝙍𝙍𝙊𝙍* ⊱❌⊱╮\n\n*Lo siento, el Menú tiene un error. Informa inmediatamente a mí Creadora para una pronta solución.*', m)
     throw e
   }
 }
